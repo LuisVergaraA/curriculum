@@ -13,34 +13,134 @@
         <h1>Curriculum Vitae - Luis Vergara</h1>
         <nav>
             <ul>
-                <li><a href="#about-me">Sobre Mí</a></li>
+                <li><a href="#about-me">Perfil</a></li>
                 <li><a href="#experience">Experiencia</a></li>
                 <li><a href="#education">Educación</a></li>
                 <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#contact">Contacto</a></li>
+                <li><a href="#references">Referencias</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="about-me">
-            <h2>Sobre Mí</h2>
-            <p>Breve descripción sobre ti.</p>
+            <h2>Perfil</h2>
+            <img src="https://placehold.co/150x150" alt="Foto de perfil" style="border-radius: 50%; display: block; margin-bottom: 1em;">
+            <p>Breve descripción sobre mi.</p>
         </section>
         <section id="experience">
             <h2>Experiencia</h2>
             <p>Detalles sobre tu experiencia laboral.</p>
+            <p>Para más información sobre mi experiencia profesional, visita mi perfil en 
+                <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>.
+            </p>
+            <table style="border-collapse: collapse; width: 100%;">
+                <tr>
+                    <th></th>
+                    <th>Puesto</th>
+                    <th>Año</th>
+                </tr>
+                <tr>
+                    <th>Empresa 1</th>
+                    <td>Desarrollador Web</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <th>Empresa 2</th>
+                    <td>Diseñador Gráfico</td>
+                    <td>2023</td>
+                </tr>
+            </table>
         </section>
         <section id="education">
             <h2>Educación</h2>
             <p>Información sobre tu formación académica.</p>
+            <ol>
+                <li>Bachillerato en ciencias</li>
+                <li>Certificado ingles cambrige C1</li>
+            </ol>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C</li>
+            </ul>
         </section>
         <section id="skills">
             <h2>Habilidades</h2>
             <p>Lista de tus habilidades principales.</p>
+            <div style="margin-top: 1em;">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/WUYqYma1qmw" title="Cómo hacer un Curriculum Vitae perfecto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
         </section>
         <section id="contact">
             <h2>Contacto</h2>
             <p>Información para que te contacten.</p>
+            <form action="#" method="post" style="display: flex; flex-direction: column; gap: 1em; max-width: 400px;">
+                <label>
+                    Nombre:
+                    <input type="text" name="nombre" required>
+                </label>
+                <label>
+                    Motivo de contacto:
+                    <select name="motivo" required>
+                        <option value="" disabled selected>Seleccione una opción</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="trabajo">Oferta de trabajo</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </label>
+                <fieldset style="border: none; padding: 0;">
+                    <legend>¿Cómo prefieres ser contactado?</legend>
+                    <label><input type="radio" name="contacto" value="email" required> Email</label>
+                    <label><input type="radio" name="contacto" value="telefono" required> Teléfono</label>
+                    <label><input type="radio" name="contacto" value="whatsapp" required> WhatsApp</label>
+                </fieldset>
+                <label>
+                    Intereses:
+                    <select name="intereses" multiple size="3" required>
+                        <option value="desarrollo">Desarrollo</option>
+                        <option value="diseño">Diseño</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </label>
+                <label>
+                    Mensaje:
+                    <textarea name="mensaje" rows="4" required></textarea>
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.113168869489!2d-79.9677287304096!3d-2.1479347999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13c1b2c1b1b1%3A0x2b1b1b1b1b1b1b1b!2sEscuela%20Superior%20Politécnica%20del%20Litoral%2C%20Guayaquil%20-%20Ecuador!5e0!3m2!1ses!2sec!4v1716134400000!5m2!1ses!2sec"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="references">
+            <h2>Referencias</h2>
+            <div style="margin-bottom: 1.5em;">
+                <blockquote>
+                    "Luis demostró una gran capacidad para resolver problemas y trabajar en equipo durante el desarrollo de nuestro sitio web."
+                </blockquote>
+                <p><strong>María González</strong><br>
+                Gerente de Proyectos en WebSolutions<br>
+                Trabajó con Luis en el rediseño de la plataforma digital de la empresa, destacando su profesionalismo y compromiso.</p>
+            </div>
+            <div style="margin-bottom: 1.5em;">
+                <blockquote>
+                    "Su creatividad y atención al detalle fueron clave para el éxito de nuestra campaña de marketing digital."
+                </blockquote>
+                <p><strong>Carlos Pérez</strong><br>
+                Director de Marketing en CreativaPlus<br>
+                Colaboró con Luis en varias campañas, resaltando su capacidad para aportar ideas innovadoras y ejecutarlas eficazmente.</p>
+            </div>
+            <div>
+                <blockquote>
+                    "Luis es un profesional confiable, siempre dispuesto a asumir nuevos retos y entregar resultados de calidad."
+                </blockquote>
+                <p><span>Andrea Ruiz</apan><br>
+                Líder de Desarrollo en TechAdvance<br>
+                Supervisó a Luis en proyectos de desarrollo de software, valorando su responsabilidad y habilidades técnicas.</p>
+            </div>
         </section>
     </main>
     <footer>
