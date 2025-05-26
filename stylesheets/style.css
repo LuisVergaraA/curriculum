@@ -1,0 +1,46 @@
+/* Aplica la fuente Tangerine al body */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px; /* Puedes ajustar el tamaño si lo deseas */
+}
+
+/* Aplica la fuente Tangerine solo al título principal */
+h1 {
+    font-family: 'Tangerine', serif;
+    font-size: 48px; /* Puedes ajustar el tamaño si lo deseas */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Selector para el id photo con ancho 8vw y alto automático */
+#photo {
+    width: 8vw;
+    height: auto;
+}
+
+/* Selector para la clase subtitle: color y texto en mayúsculas */
+.subtitle {
+    color: rgb(151 156 165 / 0.89);
+    text-transform: uppercase;
+}
+
+/* Selector para <p> dentro de <footer>: texto alineado a la derecha y en itálica */
+footer p {
+    text-align: right;
+    font-style: italic;
+}
+
+/* Selector para la etiqueta hija inmediata <ul> dentro de <nav>, elimina la viñeta */
+nav > ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Selector para las etiquetas <section> con borde gris azulado claro, margen y padding personalizado */
+section {
+    border: 5.0pt solid #cedddd;
+    margin: 4px 2px 1.2rem 2px;
+    padding: 1.5% 0.8%;
+    border-radius: 25px;
+    box-shadow: 3px 3px 1px 0 rgba(235, 234, 234, 0.6);
+}
