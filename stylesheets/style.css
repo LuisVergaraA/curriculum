@@ -1,46 +1,184 @@
 /* Aplica la fuente Tangerine al body */
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px; /* Puedes ajustar el tamaño si lo deseas */
+    font-size: 20px;
+    background: linear-gradient(120deg, #f8fafc 0%, #e6f0f3 100%);
+    color: #222e36;
+    margin: 0;
+    padding: 0;
 }
 
 /* Aplica la fuente Tangerine solo al título principal */
 h1 {
     font-family: 'Tangerine', serif;
-    font-size: 48px; /* Puedes ajustar el tamaño si lo deseas */
+    font-size: 56px;
     text-align: center;
     font-weight: bold;
+    letter-spacing: 2px;
+    color: #2a4d69;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 2px 6px #b3c6d6;
 }
 
-/* Selector para el id photo con ancho 8vw y alto automático */
+/* Selector para el id photo con borde y sombra elegante */
 #photo {
     width: 8vw;
     height: auto;
+    border-radius: 50%;
+    border: 3px solid #b3c6d6;
+    box-shadow: 0 4px 16px 0 rgba(42, 77, 105, 0.12);
+    display: block;
+    margin: 1.5rem auto 1rem auto;
 }
 
 /* Selector para la clase subtitle: color y texto en mayúsculas */
 .subtitle {
-    color: rgb(151 156 165 / 0.89);
+    color: #4f5d75;
     text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-bottom: 1.2rem;
 }
 
 /* Selector para <p> dentro de <footer>: texto alineado a la derecha y en itálica */
 footer p {
     text-align: right;
     font-style: italic;
+    color: #7a869a;
+    font-size: 1rem;
+    margin: 0.5rem 2rem 0.5rem 0;
 }
 
-/* Selector para la etiqueta hija inmediata <ul> dentro de <nav>, elimina la viñeta */
+/* Menú de navegación elegante */
+nav {
+    background: #2a4d69;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 2px 8px 0 rgba(42, 77, 105, 0.08);
+    margin-bottom: 2rem;
+}
+
 nav > ul {
     list-style: none;
     padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
 }
 
-/* Selector para las etiquetas <section> con borde gris azulado claro, margen y padding personalizado */
+nav > ul > li > a {
+    text-decoration: none;
+    color: #f8fafc;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+    background: #4f5d75;
+    color: #fff;
+    box-shadow: 0 2px 8px 0 rgba(42, 77, 105, 0.12);
+}
+
+/* Secciones con borde, sombra y fondo sutil */
 section {
-    border: 5.0pt solid #cedddd;
-    margin: 4px 2px 1.2rem 2px;
-    padding: 1.5% 0.8%;
+    border: 2.5px solid #cedddd;
+    margin: 16px 8px 2rem 8px;
+    padding: 2.5% 2.5%;
     border-radius: 25px;
-    box-shadow: 3px 3px 1px 0 rgba(235, 234, 234, 0.6);
+    box-shadow: 3px 3px 12px 0 rgba(42, 77, 105, 0.10);
+    background: rgba(255,255,255,0.85);
+    transition: box-shadow 0.2s;
+}
+
+section:hover {
+    box-shadow: 0 8px 24px 0 rgba(42, 77, 105, 0.18);
+    border-color: #b3c6d6;
+}
+
+/* Mejorar los títulos de sección */
+section h2, section h3 {
+    color: #2a4d69;
+    margin-top: 0;
+    margin-bottom: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Listas dentro de secciones */
+section ul {
+    padding-left: 1.2rem;
+    color: #222e36;
+    font-size: 1.05rem;
+}
+
+/* Botones genéricos */
+button, .btn {
+    background: #2a4d69;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px 0 rgba(42, 77, 105, 0.08);
+}
+
+button:hover, .btn:hover {
+    background: #4f5d75;
+    box-shadow: 0 4px 16px 0 rgba(42, 77, 105, 0.14);
+}
+
+/* Estilos para formularios dentro de secciones */
+section > form {
+    display: grid; /* Activa el modelo de diseño grid */
+    grid-template-columns: 1fr; /* Una sola columna que ocupa todo el ancho */
+    gap: 1rem 1rem; /* Espacio uniforme de 1rem entre filas y columnas */
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Organización de la sección de referencias con Grid */
+#references {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 1rem 1rem;
+}
+
+#references > h2 {
+    grid-column: 1 / 4; /* El subtítulo ocupa todo el ancho */
+    grid-row: 1;
+    text-align: center;
+}
+
+#references > article {
+    grid-row: 2;
+}
+
+/* Organización de la sección de referencias con Flex */
+#references.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#references.flex > h2 {
+    width: 100%;
+    text-align: center;
+}
+
+#references.flex > article {
+    flex: 1 1 0;
+    margin: 0;
+    min-width: 0;
 }

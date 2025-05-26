@@ -78,38 +78,35 @@
             <h2>Contacto</h2>
             <p>Información para que te contacten.</p>
             <form action="#" method="post" style="display: flex; flex-direction: column; gap: 1em; max-width: 400px;">
-                <label>
-                    Nombre:
-                    <input type="text" name="nombre" required>
-                </label>
-                <label>
-                    Motivo de contacto:
-                    <select name="motivo" required>
-                        <option value="" disabled selected>Seleccione una opción</option>
-                        <option value="consulta">Consulta</option>
-                        <option value="trabajo">Oferta de trabajo</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                </label>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="motivo">Motivo de contacto:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="trabajo">Oferta de trabajo</option>
+                    <option value="otro">Otro</option>
+                </select>
+
                 <fieldset style="border: none; padding: 0;">
                     <legend>¿Cómo prefieres ser contactado?</legend>
                     <label><input type="radio" name="contacto" value="email" required> Email</label>
                     <label><input type="radio" name="contacto" value="telefono" required> Teléfono</label>
                     <label><input type="radio" name="contacto" value="whatsapp" required> WhatsApp</label>
                 </fieldset>
-                <label>
-                    Intereses:
-                    <select name="intereses" multiple size="3" required>
-                        <option value="desarrollo">Desarrollo</option>
-                        <option value="diseño">Diseño</option>
-                        <option value="marketing">Marketing</option>
-                        <option value="otros">Otros</option>
-                    </select>
-                </label>
-                <label>
-                    Mensaje:
-                    <textarea name="mensaje" rows="4" required></textarea>
-                </label>
+
+                <label for="intereses">Intereses:</label>
+                <select id="intereses" name="intereses" multiple size="3" required>
+                    <option value="desarrollo">Desarrollo</option>
+                    <option value="diseño">Diseño</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="otros">Otros</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
                 <button type="submit">Enviar</button>
             </form>
             <iframe
@@ -119,30 +116,30 @@
         </section>
         <section id="references">
             <h2>Referencias</h2>
-            <div style="margin-bottom: 1.5em;">
+            <article style="margin-bottom: 1.5em;">
                 <blockquote>
                     "Luis demostró una gran capacidad para resolver problemas y trabajar en equipo durante el desarrollo de nuestro sitio web."
                 </blockquote>
                 <p><strong>María González</strong><br>
                 Gerente de Proyectos en WebSolutions<br>
                 Trabajó con Luis en el rediseño de la plataforma digital de la empresa, destacando su profesionalismo y compromiso.</p>
-            </div>
-            <div style="margin-bottom: 1.5em;">
+            </article>
+            <article style="margin-bottom: 1.5em;">
                 <blockquote>
                     "Su creatividad y atención al detalle fueron clave para el éxito de nuestra campaña de marketing digital."
                 </blockquote>
                 <p><strong>Carlos Pérez</strong><br>
                 Director de Marketing en CreativaPlus<br>
                 Colaboró con Luis en varias campañas, resaltando su capacidad para aportar ideas innovadoras y ejecutarlas eficazmente.</p>
-            </div>
-            <div>
+            </article>
+            <article>
                 <blockquote>
                     "Luis es un profesional confiable, siempre dispuesto a asumir nuevos retos y entregar resultados de calidad."
                 </blockquote>
-                <p><span>Andrea Ruiz</apan><br>
+                <p><strong>Andrea Ruiz</strong><br>
                 Líder de Desarrollo en TechAdvance<br>
                 Supervisó a Luis en proyectos de desarrollo de software, valorando su responsabilidad y habilidades técnicas.</p>
-            </div>
+            </article>
         </section>
     </main>
     <footer>
