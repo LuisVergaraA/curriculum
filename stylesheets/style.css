@@ -44,7 +44,7 @@ h1 {
 
 /* Selector para <p> dentro de <footer>: texto alineado a la derecha y en itálica */
 footer p {
-    text-align: right;
+    text-align: center;
     font-style: italic;
     color: #7a869a;
     font-size: 1rem;
@@ -89,18 +89,11 @@ nav > ul > li > a:focus {
 
 /* Secciones con borde, sombra y fondo sutil */
 section {
-    border: 2.5px solid #cedddd;
-    margin: 16px 8px 2rem 8px;
-    padding: 2.5% 2.5%;
-    border-radius: 25px;
-    box-shadow: 3px 3px 12px 0 rgba(42, 77, 105, 0.10);
-    background: rgba(255,255,255,0.85);
-    transition: box-shadow 0.2s;
-}
-
-section:hover {
-    box-shadow: 0 8px 24px 0 rgba(42, 77, 105, 0.18);
-    border-color: #b3c6d6;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    padding: 20px 16px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
 }
 
 /* Mejorar los títulos de sección */
@@ -181,4 +174,13 @@ section > form {
     flex: 1 1 0;
     margin: 0;
     min-width: 0;
+}
+
+.contenedor-principal {
+    max-width: 1200px; /* Puedes ajustar este valor */
+    margin: 32px auto;
+    padding: 24px 16px;
+    background: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
